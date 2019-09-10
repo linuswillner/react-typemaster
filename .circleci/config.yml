@@ -19,5 +19,8 @@ jobs:
           name: Test
           command: npm test
       - run:
+          name: Compile
+          command: npm run compile
+      - run:
           name: Build
           command: npm run build
