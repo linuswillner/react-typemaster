@@ -1,0 +1,68 @@
+{
+  "name": "react-typist-repacked",
+  "version": "1.0.0",
+  "description": "react-typist repacked for modern React",
+  "main": "lib/Typist.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server",
+    "test": "eslint .",
+    "test-fix": "eslint . --fix",
+    "build": "cross-env NODE_ENV=production webpack -p",
+    "build-clean": "cross-env NODE_ENV=production webpack -p -c",
+    "compile": "cross-env NODE_ENV=production babel src/components --out-dir lib --copy-files",
+    "prepublishOnly": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linuswillner/react-typist-repacked.git"
+  },
+  "keywords": [],
+  "author": "Linus Willner <hello@linuswillner.me> (https://linuswillner.me)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.6.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^5.2.1",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "file-loader": "^4.2.0",
+    "fs-extra": "^8.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "react-hot-loader": "^4.12.12",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^2.0.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^16.9.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
