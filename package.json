@@ -1,7 +1,7 @@
 {
   "name": "react-typist-repacked",
   "version": "1.0.0",
-  "description": "react-typist repacked for modern React",
+  "description": "A modernised and repacked version of react-typist",
   "main": "lib/Typist.js",
   "files": [
     "lib"
