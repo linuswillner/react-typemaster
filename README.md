@@ -8,7 +8,7 @@ This is a modernised and repacked version of the original [react-typist](https:/
 
 ## Install
 ```shell
-npm i react-typist-repack
+npm i react-typist-repacked
 ```
 
 ## Live Example
